@@ -53,7 +53,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white; // @graySilver;
+@bodyBackground:        @graySilver;
 @textColor:             @grayDark;
 
 
