@@ -21,16 +21,14 @@
  * A     |- #header-lvl1.row > span12 > { #header-nav, #header-council }
  * D     |- #header-lvl2.row > span12
  * E          |- #logo-and-name
- * R          |- #header-search
+ * R     |- #header-lvl3.row > span 12 
+ *            |- #header-search
  */
 
 #header {
-  height: 99px;
+  height: 78px;
   border-bottom: 1px solid @grayDark;
   background-color: @white;
-  #gradient > .vertical(@white, lighten(@orange, 10%));
-  @shadow: 0 3px 3px rgba(0, 0 , 0, .25);
-  .box-shadow(@shadow);
 }
 
 #header .container {
@@ -44,6 +42,13 @@
 }
 
 #header-lvl2 {
+}
+
+// NEW!
+#header-lvl3 {
+  background-color: @red;
+  height: 50px;
+  .pull-right();
 }
 
 #header-nav {
@@ -68,7 +73,7 @@
 }
 
 #header-council {
-  .pull-right;
+  display: none;
 }
 
 #logo-and-name h1 {

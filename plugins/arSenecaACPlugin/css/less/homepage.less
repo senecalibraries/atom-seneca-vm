@@ -17,12 +17,9 @@
 
 #homepage-hero {
 
-  background: url(../../images/homepage-bg.jpg) no-repeat @black;
-  .background-size(cover);
-  height: 420px;
+  background-color: @white;
   padding-top: 40px;
-  padding-bottom: 40px;
-  text-shadow: 2px 0 2px rgba(25, 25, 25, .7);
+  padding-bottom: 0;
   margin: 0 auto;
 
   h1,
@@ -30,7 +27,7 @@
   p,
   li,
   a {
-    color: @white;
+    color: @black;
     line-height: 120%;
   }
 
@@ -92,7 +89,7 @@
   }
 
   h3 {
-    color: @white;
+    color: @black;
     line-height: 110%;
     margin-bottom: 10px;
   }
@@ -112,115 +109,13 @@
 // Virtual exhibits
 
 #virtual-exhibit {
-
-  position: relative;
-
-  div {
-    background-image: url(http://scaa.usask.ca/gallery/northern/dommasch/images/600px/hans60_017.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 80%;
-    background-size: cover;
-    width: 100%;
-    display: block;
-    height: 280px;
-  }
-
-  h3 {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    padding: 8px;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, .4);
-  }
-
-  .small {
-    display: block;
-    font-size: 14px;
-    line-height: 16px;
-    color: lighten(@grayLight, 10%);
-  }
-
-  a h3 {
-    min-height: 84px;
-  }
-
-  a h3,
-  a div {
-    .transition(all 0.2s ease-in-out);
-  }
-
-  a:hover h3 {
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-  }
-
-  a:hover div {
-    background-position: left 90%;
-  }
-
-  a:hover div:after {
-    content: "›"; // "»";
-    position: absolute;
-    font-size: 128px;
-    bottom: 50px;
-    right: 50px;
-    padding: 18px 20px 40px 22px;
-    .border-radius(60px);
-    @white: rgba(255, 255, 255, .4);
-    border: 12px solid @white;
-    color: @white;
-  }
-
+  display: none;
 }
 
 // Popular this week
 
 #popular-this-week {
-
-  color: @white;
-  background-color: rgba(0, 0, 0, .10);
-
-  h3 {
-    padding: 8px;
-    margin: 0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-    background-color: rgba(0, 0, 0, .10);
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 4px 0;
-  }
-
-  li {
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
-
-  a {
-    color: @white;
-    display: block;
-    padding: 3px 72px 3px 8px;
-    .text-overflow();
-    &:hover {
-      background-color: rgba(0, 0, 0, .10);
-    }
-  }
-
-  strong {
-    position: absolute;
-    right: 4px;
-    color: @gray;
-    padding-left: 4px;
-    font-weight: normal;
-    font-style: oblique;
-  }
-
+   display: none;
 }
 
 // Responsive deisgn
