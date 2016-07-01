@@ -61,24 +61,21 @@
     <div id="header-lvl2">
       <div class="row">
 
-        <div id="logo-and-name" class="span12">
+        <div id="logo-and-name" class="span6">
           <?php if ('fr' == $sf_user->getCulture()): ?>
-            <h1><?php echo link_to(image_tag('/plugins/arSenecaACPlugin/images/logo.png', array('alt' => __('Seneca Archives'))), 'http://seneca.libguides.com/archives', array('rel' => 'home')) ?></h1>
+            <h1><?php echo link_to(image_tag('/plugins/arArchivesCanadaPlugin/images/logo.png', array('alt' => __('Archives Canada'))), 'http://archivescanada.ca/homeFR', array('rel' => 'home')) ?></h1>
           <?php else: ?>
-            <h1><?php echo link_to(image_tag('/plugins/arSenecaACPlugin/images/logo.png', array('alt' => __('Seneca Archives'))), 'http://seneca.libguides.com/archives', array('rel' => 'home')) ?></h1>
+            <h1><?php echo link_to(image_tag('/plugins/arArchivesCanadaPlugin/images/logo.png', array('alt' => __('Archives Canada'))), 'http://archivescanada.ca', array('rel' => 'home')) ?></h1>
           <?php endif; ?>
         </div>
-      </div>
-   </div>
 
-   <div id="header-lvl3">
-      <div class="row">
-        <div id="header-search" class="span12">
+        <div id="header-search" class="span6">
           <?php echo get_component('search', 'box') ?>
         </div>
+
       </div>
     </div>
- 
+
   </div>
 
 </div>
