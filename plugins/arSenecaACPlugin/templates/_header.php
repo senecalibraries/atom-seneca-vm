@@ -21,12 +21,6 @@
       <div class="row">
         <div class="span12">
 
-          <?php if ('fr' == $sf_user->getCulture()): ?>
-            <a id="header-council" href="http://cdncouncilarchives.ca"><?php echo image_tag('/plugins/arArchivesCanadaPlugin/images/council.fr.png', array('width' => '156', 'height' => '42', 'alt' => __('Canadian Council of Archives'))) ?></a>
-          <?php else: ?>
-            <a id="header-council" href="http://cdncouncilarchives.ca"><?php echo image_tag('/plugins/arArchivesCanadaPlugin/images/council.en.png', array('width' => '156', 'height' => '42', 'alt' => __('Canadian Council of Archives'))) ?></a>
-          <?php endif; ?>
-
           <ul id="header-nav" class="nav nav-pills">
 
             <li><?php echo link_to(__('Home'), 'http://10.10.10.10/') ?></li> 
