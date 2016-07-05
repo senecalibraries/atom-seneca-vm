@@ -32,38 +32,31 @@
   <?php endif; ?>
 
   <div class="span3" id="intro">
-    <?php if ('fr' == $sf_user->getCulture()): ?>
       <h2>
-        <span class="title">ARCHIVESCANADA.ca</span>
-        Votre accès à l’histoire du Canada
+        <span class="title">Welcome to Seneca College Archives</span>
+        
       </h2>
-      <p>ARCHIVESCANADA.ca est un portail vous donnant accès à des ressources archivistiques à travers le Canada:<br />Par l'entremise de ce portail, vous pouvez faire une recherche dans les descriptions de documents d'archives, visionner des photographies, des cartes, ou d’autres documents numérisés ainsi que visiter des expositions virtuelles, et découvrir les dépôts d’archives qui détient l’information dont vous avez besoin. ARCHIVESCANADA.ca est votre portail archivistique national pour découvrir le patrimoine documentaire du Canada que l’on retrouve dans plus de 800 dépôts d'archives.</p>
-    <?php else: ?>
-      <h2>
-        <span class="title">ARCHIVESCANADA.ca</span>
-        The Gateway to Canada's Past
-      </h2>
-      <p>ARCHIVESCANADA.ca is your gateway to resources in archives across Canada:<br />Through this gateway, search descriptions of archival materials, find digital images, visit virtual exhibits, browse information about archives in every province and territory, and discover the archives with the information you need. ARCHIVESCANADA.ca is your national portal to Canada's documentary heritage, found in over 800 archives.</p>
-    <?php endif; ?>
+
+      <p>Seneca College Archives is a division of Seneca Libraries.</p>
+
+      <p>The Archives identifies, preserves, and makes available for use the documentary heritage of Seneca College of Applied Arts and Technology. </p>
+
+      <p>We collect inactive records of long-term historical value produced by the departments and faculties of Seneca College, as well as the records of individuals and organizations closely associated with the College.</p> 
+
+      <p>Records in our collection include textual records, moving image records, graphic records, architectural drawings, publications, objects, and more.</p>
+
+      <p>Our resources are open to all members of the College community and the public for the purposes of research, teaching, publication, television and radio programmes, and general interest.</p>
+
+      <p>This AtoM page provides digital access to the holdings of the Archives. Although most of our collections are described on this page, some collections may not yet be. For additional information records not fully described on this page, please contact the archivist.</p> 
+
   </div>
 
 </div>
 
 <div id="homepage" class="row">
 
-  <div class="span4">
+  <div class="span3">
     <?php echo get_component('default', 'popular', array('limit' => 10, 'sf_cache_key' => $sf_user->getCulture())) ?>
-  </div>
-
-  <div class="span8" id="virtual-exhibit">
-    <a href="http://scaa.usask.ca/gallery/northern/dommasch/">
-      <h3>
-        <?php echo __('Virtual exhibits') ?><br />
-        <span class="title">Hans S. Dommasch: Canada North of 60</span>
-        <span class="small">University of Saskatchewan Archives</span>
-      </h3>
-      <div>&nbsp;</div>
-    </a>
   </div>
 
 </div>
