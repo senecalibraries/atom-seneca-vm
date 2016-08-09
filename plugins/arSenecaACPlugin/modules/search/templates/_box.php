@@ -10,7 +10,7 @@
       <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Search') ?>"/>
     <?php endif; ?>
 
-    <button><span><?php echo __('Search') ?></span></button>
+    <button><span><?php echo __('<i class="fa fa-search" aria-hidden="true"></i>') ?></span></button>
 
     <div id="search-realm" class="search-popover">
 

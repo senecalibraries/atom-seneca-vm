@@ -1,3 +1,5 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
 <?php echo get_component_slot('header') ?>
 
 <?php echo get_component('default', 'updateCheck') ?>
@@ -47,15 +49,21 @@
         </div>
       </div>
    </div>
+ 
 
-   <div id="header-lvl3">
+</div>
+
+ <div id="header-lvl3">
       <div class="row">
         <div id="header-search" class="span12">
           <?php echo get_component('search', 'box') ?>
         </div>
       </div>
-    </div>
- 
-  </div>
+   </div>
 
+   <div id="header-lvl4">
+       <div class="row">
+    </div>
+
+    
 </div>

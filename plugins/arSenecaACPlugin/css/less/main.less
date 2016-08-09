@@ -33,8 +33,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: @serifFontFamily;
+  font-family: @sansFontFamily;
   font-weight: normal;
+  text-transform: uppercase;
+
 }
 
 #content {
@@ -94,8 +96,20 @@ h1, h2, h3, h4, h5, h6,
   color: @black;
 }
 
+#sidebar
+{
+  margin: 0 0 0 10px;
+}
+
 #sidebar li a,
-{color: @blue;}
+{color: @blue;
+}
+
+#sidebar h2
+{
+  font-family: 'Montserrat';
+  text-transform: none;
+}
 
 .pagination ul > li > a,
 .pagination ul > li > span {
@@ -156,7 +170,8 @@ h1, h2, h3, h4, h5, h6,
 h1,
 #context-menu h4,
 #facets .content h3 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+  font-size: 2em;
+  //text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
 }
 
 h1 .count {

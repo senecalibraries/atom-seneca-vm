@@ -26,8 +26,8 @@
  */
 
 #header {
-  height: 78px;
-  border-bottom: 1px solid @grayDark;
+  height: 76px; // originally 78px;
+  //border-bottom: 1px solid @grayDark; 
   background-color: @white;
 }
 
@@ -46,10 +46,18 @@
 
 // NEW!
 #header-lvl3 {
+  position: relative;
   background-color: @red;
   height: 50px;
-  .pull-right();
+  //.pull-right();
 }
+
+#header-lvl4 {
+  position: relative;
+  background-color: @red;
+  height: 1px;
+}
+
 
 #header-nav {
   .pull-right();
@@ -60,16 +68,16 @@
   .border-radius(0);
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Open Sans Semibold';
-  font-size: 16px;
+  font-family: 'Montserrat';
+  font-size: 20px;
   font-variant: small-caps;
   text-transform: lowercase;
   color: @gray;
 }
 
 #header-nav > li > a:hover {
-  color: @orange;
-  background-color: @grayDark;
+  color: @white; //originally @orange
+  background-color: @gray; //originally @graydark
 }
 
 #header-council {
@@ -84,21 +92,39 @@
 #search-form-wrapper {
 
   form {
-    position: relative; // Positiionate search autocomplete;
+    position: absolute; // Positiionate search autocomplete;
+    right: 102px; // align search box with container 
     margin: 12px 0 0 0;
   }
 
   .search-popover {
-    left: 37px;
+    //left: 100px;
     top: 30px;
-    right: 33px;
+    //right: 33px;
   }
+
+//NEW!!!
+
+  button {
+  position: relative;
+  top: -5px; 
+  right: 10px;
+  height: 30px;
+  background-color: @gray;
+  border: 1px solid @gray;
+  border-radius: 0px 5px 5px 0px;
+  }
+
+  .fa-search {
+  color: @white;
+  }
+
 
   // Make the border darker
   input[type=text],
   .btn-group,
   .btn {
-    border-color: #9a9a9a;
+    //border-color: #9a9a9a;
   }
 
   // Cancel some Dominion and Bootstrap defaults
@@ -108,8 +134,8 @@
     font-size: 14px;
     color: #333;
     outline: none;
-    .placeholder(#999);
-    .transition(width .5s);
+    //.placeholder(#999); // remove automatic re-sizing of search box
+    //.transition(width .5s); // remove automatic re-sizing of search box 
 
     &:focus {
       border: 1px solid #999;
@@ -181,15 +207,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+
   #header-search input[type=text] {
     width: 290px;
   }
-}
 
-@media (max-width: 767px) {
-  #header-search input[type=text] {
-    width: auto;
-  }
   #top-bar {
     .hide();
   }
@@ -203,7 +225,59 @@
     margin-right: -20px;
   }
   #header-search {
-    margin: 10px auto 0 auto;
+    margin: 10px auto 10px auto;
+    .input-append {
+      text-align: center;
+      width: 100%;
+    }
+    form {
+      text-align: center;
+    }
+    input[type=text] {
+      width: 85%;
+    }
+  }
+  #header-nav {
+    display: block;
+    clear: both;
+  }
+
+
+}
+
+@media (max-width: 767px) {  
+
+  #header-search input[type=text] {
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+  }
+
+
+  #search-form-wrapper {
+
+  button {
+  position: absolute;
+  top: -10px;
+  }
+
+  }
+
+
+  #top-bar {
+    .hide();
+  }
+  #logo-and-name h1 {
+    margin: 6px 0 0 0;
+    text-align: center;
+  }
+  #header {
+    height: 180px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #header-search {
+    margin: 10px auto 10px auto;
     .input-append {
       text-align: center;
       width: 100%;
