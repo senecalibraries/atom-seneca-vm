@@ -201,29 +201,47 @@
 }
 
 @media (min-width: 980px) and (max-width: 1214px) {
+
   #header-search input[type=text] {
     width: 390px;
-  }
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
 
   #header-search input[type=text] {
     width: 290px;
+    position: relative;
+    bottom: 10px;
+  }
+
+
+  #search-form-wrapper {
+
+  button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  }
+
   }
 
   #top-bar {
     .hide();
   }
+
   #logo-and-name h1 {
     margin: 6px 0 0 0;
     text-align: center;
   }
+
   #header {
     height: 180px;
     margin-left: -20px;
     margin-right: -20px;
   }
+
   #header-search {
     margin: 10px auto 10px auto;
     .input-append {
@@ -233,9 +251,7 @@
     form {
       text-align: center;
     }
-    input[type=text] {
-      width: 85%;
-    }
+
   }
   #header-nav {
     display: block;
@@ -248,7 +264,7 @@
 @media (max-width: 767px) {  
 
   #header-search input[type=text] {
-    width: 100px;
+    width: auto;
     position: relative;
     bottom: 10px;
   }
@@ -262,7 +278,6 @@
   }
 
   }
-
 
   #top-bar {
     .hide();
