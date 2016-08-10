@@ -23,7 +23,20 @@ body {
 
 #wrapper {
   background-color: @white;
+
+  h1 {
+  display: inline-block;
+  margin-left: 20px;
+  }
 }
+
+#main-column {
+  h1 {
+  display: in-line-block;
+  margin-left: 10px;
+  }
+}
+
 
 // Font sizes and families
 
@@ -55,12 +68,25 @@ h2 { font-size: 20px; }
 h3 { font-size: 19px; }
 h4 { font-size: 18px; }
 
+#content {
+  width: 97%;
+  margin: 0px auto 10px auto;
+}
+
+
 #content h2 {
   font-size: 14px;
+  background-color: @gray;
+  color: @white;
 }
 
 #content .field > h3 {
   font-size: 13px;
+}
+
+#content img {
+  width: 100%;
+  margin: 10px 0 0 0;
 }
 
 // Color changes
