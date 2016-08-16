@@ -114,15 +114,18 @@ h1, h2, h3, h4, h5, h6,
 .nav-pills .active a,
 .result-count,
 #sort-header .dropdown-selected span,
-#context-menu li a,
-#advanced-search-filters,
 #context-menu a,
+#advanced-search-filters,
 #context-menu #primary-contact,
 #context-menu #opening-times,
 #context-menu #physical-objects,
 .list-menu .more a {
   color: @black;
 }
+
+
+#context-menu li a
+{color: @blue;}
 
 #sidebar
 {
@@ -196,11 +199,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1,
-#context-menu h4,
 #facets .content h3 {
   font-size: 2em;
   //text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
 }
+
+#context-menu h4
+  {font-size: 1em;
+  text-transform: none;}
 
 h1 .count {
   text-shadow: none;
@@ -366,4 +372,12 @@ body.login #content {
 .x-btn {
   color: @white;
   border: 2px solid @white;
+}
+
+#results-label
+{visibility: hidden;}
+
+.multiline-header {
+  border: none;
+  margin-left: 4px;
 }

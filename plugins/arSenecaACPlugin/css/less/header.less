@@ -103,18 +103,27 @@
     right: 10px;
   }
 
+
+
  #browsebutton {
   position: absolute;
   right: 73px;
   margin-top: 5px;
   }
 
+
   #browse-menu {
+    width: 110px;
+    button {
+    border-radius: 5px 5px 5px 5px;
+    }
+    }
 
-  button {
-  border-radius: 5px 5px 5px 5px;}
 
-  }
+.open>button.top-dropdown, button.top-dropdown:hover, button.top-dropdown:focus {
+    background-color: @gray !important
+    }
+
 
 
 //NEW! magnifying glass button next to search box
@@ -168,6 +177,7 @@
   // Customize browse menu
   .dropdown-menu {
 
+    background-color: @red;
     text-align: left;
     border: 2px solid #333;
     @shadow:  2px  2px 0px rgba(255, 255, 255, .5),
