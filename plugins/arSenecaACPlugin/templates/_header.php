@@ -45,7 +45,7 @@
       <div class="row">
 
         <div id="logo-and-name" class="span12">
-            <h1><?php echo link_to(image_tag('/plugins/arSenecaACPlugin/images/logo.png', array('alt' => __('Seneca Archives'))), 'http://seneca.libguides.com/archives', array('rel' => 'home')) ?></h1>
+            <h1><?php echo link_to(image_tag('/plugins/arSenecaACPlugin/images/logo.png', array('alt' => __('Seneca Archives'))), 'http://www.senecacollege.ca', array('rel' => 'home')) ?></h1>
         </div>
       </div>
    </div>
