@@ -18,8 +18,8 @@
 // The purple background!
 
 body {
-  background-image: url(../../images/background.png);
-  min-width: 350px;
+  background-image: url('http://frcrepository.senecacollege.ca/omeka/digitallibrary/atomsite/background_004.jpg');
+  background-size: cover;
 }
 
 #wrapper {
@@ -127,6 +127,9 @@ h1, h2, h3, h4, h5, h6,
 #context-menu li a
 {color: @blue;}
 
+#context-menu li a:hover
+{color: @blueDark;}
+
 #sidebar
 {
   margin: 0 0 0 10px;
@@ -134,6 +137,10 @@ h1, h2, h3, h4, h5, h6,
 
 #sidebar li a,
 {color: @blue;
+}
+
+#sidebar li a:hover {
+  color: @orange;
 }
 
 #sidebar h2
@@ -171,8 +178,10 @@ h1, h2, h3, h4, h5, h6,
 #facets .facet.open .facet-header p,
 #facets .facet-header p:hover {
   background-color: rgba(0, 0, 0, 0.10);
-margin: 0px 8px 0px 8px; 
 }
+
+.search-filter
+{margin: 0px 8px 0px 8px; }
 
 .sidebar-widget > div,
 .nav-pills .active a,
@@ -206,7 +215,7 @@ h1,
 }
 
 #context-menu h4
-  {font-size: 1.2em;
+  {font-size: 14px;
   text-transform: none;}
 
 h1 .count {
@@ -325,6 +334,8 @@ h1 .count {
 
 #treeview-search .search-box input {
   .placeholder(#bbb);
+  color: @black;
+  background-color: @white;
 }
 
 #treeview-list, #treeview-list .pager li > a {
@@ -407,3 +418,19 @@ body.login #content {
  {color: @white;
  background-color: @grayDarker;
  display: inline;}
+
+ .actions
+ {background-color: @gray;
+ width: 94%;
+ margin: auto auto 10px auto;}
+
+.search-result .title, .search-result .title a:hover {
+  color: @blueDark;
+    }
+
+.search-result .result-details li.reference-code {
+    color: @gray;}
+
+#treeview .active a:hover {
+color: @blueDark;
+}
