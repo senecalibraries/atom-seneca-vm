@@ -25,7 +25,7 @@
 
           <ul id="header-nav" class="nav nav-pills">
 
-            <li><?php echo link_to(__('Home'), 'http://10.10.10.10/') ?></li> 
+            <li><?php echo link_to(__('Home'), 'https://senecacollege.accesstomemory.org') ?></li> 
             <li><?php echo link_to(__('About Our Holdings'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
             <li><?php echo link_to(__('Services'), array('module' => 'staticpage', 'slug' => 'services')) ?></li>
             <li><?php echo link_to(__('News & Events'), array('module' => 'staticpage', 'slug' => 'news')) ?></li>
