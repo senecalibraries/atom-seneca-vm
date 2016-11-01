@@ -1,4 +1,5 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <?php echo get_component_slot('header') ?>
 
@@ -58,6 +59,9 @@
       <div class="row">
         <div id="header-search" class="span12">
           <?php echo get_component('search', 'box') ?>
+        </div>
+        <div id="clipboard-public">
+        <?php echo get_component('menu', 'clipboardMenu') ?>
         </div>
       </div>
    </div>
